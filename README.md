@@ -7,4 +7,4 @@ Materia impartida por el ***Ing. Armando López***
 
 
 >Ultimo cambio realizado
->- Readme creado
+>- Codigo espacioMemoria [Creado]
