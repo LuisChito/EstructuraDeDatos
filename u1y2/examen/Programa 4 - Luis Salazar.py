@@ -5,7 +5,7 @@ def llenar_vector_aleatorio(n):
     for i in range(n):
         fila = []
         for j in range(n):
-            fila.append(random.randint(1, 100))
+            fila.append(random.randint(-100, 100))
         vector.append(fila)
     return vector
 
@@ -38,7 +38,7 @@ def main():
     n = int(input("Ingrese la cantidad de celdas para los vectores (n x n): "))
     
     while True:
-        opcion = int(input("\nElija una opción:\n1. Llenar vector A de manera aleatoria.\n2. Llenar vector B de manera aleatoria.\n3. Sumar vector A y vector B.\n4. Restar vector B menos vector A.\n5. Salir\n"))
+        opcion = int(input("\nElija una opción:\n1. Llenar vector A de manera aleatoria.\n2. Llenar vector B de manera aleatoria.\n3. Sumar vector A y vector B.\n4. Restar vector B menos vector A.\n5. Imprimir vectores\n6. Salir\n"))
 
         if opcion == 1:
             vector_a = llenar_vector_aleatorio(n)

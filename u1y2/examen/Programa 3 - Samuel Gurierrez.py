@@ -1,6 +1,6 @@
 def es_numerico(valor):
     try:
-        float(valor)
+        int(valor)
         return True
     except ValueError:
         return False
@@ -14,7 +14,7 @@ def alumnos():
         if all(es_numerico(alumno) for alumno in alumestruc + alumprogra):
             break
         else:
-            print("Error: Se ingresó un valor no numérico. Por favor, intenta de nuevo.")
+            print("Error: Se ingresó un valor no entero. Por favor, intenta de nuevo.")
 
     estruc = alumestruc
     progra = alumprogra
