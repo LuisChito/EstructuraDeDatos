@@ -1,15 +1,15 @@
 class Pila:
     def __init__(self):
-        self.items = []
+        self.elementos = []
 
     def vacio(self):
-        return self.items == []
+        return self.elementos == []
 
     def apilar(self, item):
-        self.items.append(item)
+        self.elementos.append(item)
 
     def desapilar(self):
-        return self.items.pop()
+        return self.elementos.pop()
 
 
 def posfijo(expresion):
