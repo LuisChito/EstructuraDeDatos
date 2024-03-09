@@ -59,12 +59,12 @@ def realizar(operador, op1, op2):
 
 
 expresion = input("Ingrese la expresión a evaluar: ")
-tipo_notacion = input("Ingrese 'posfija' o 'prefija' para seleccionar la notación: ")
+tipo_not = input("Ingrese 'posfija' o 'prefija' para seleccionar la notación: ")
 
-if tipo_notacion == "posfija":
+if tipo_not == "posfija":
     resultado = posfijo(expresion)
     print("El resultado de la expresión posfija es:", resultado)
-elif tipo_notacion == "prefija":
+elif tipo_not == "prefija":
     resultado = prefijo(expresion)
     print("El resultado de la expresión prefija es:", resultado)
 else:
