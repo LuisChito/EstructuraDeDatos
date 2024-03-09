@@ -28,6 +28,23 @@ def posfijo(expresion):
     return pila.desapilar()
 
 
+def prefijo(expresion):
+    pila = Pila()
+    operandos = expresion.split()
+
+    operandos.reverse()
+    for token in operandos:
+        if token.isdigit():
+            pila.apilar(int(token))
+        else:
+            operando1 = pila.desapilar()
+            operando2 = pila.desapilar()
+            resultado = realizar(token, operando1, operando2)
+            pila.apilar(resultado)
+
+    return pila.desapilar()
+
+
 def realizar(operador, op1, op2):
     if operador == '+':
         return op1 + op2
@@ -41,6 +58,14 @@ def realizar(operador, op1, op2):
         raise ValueError("Operador no válido")
 
 
-expresion_posfija = "3 4 + 2 *"
-resultado = posfijo(expresion_posfija)
-print("El resultado de la expresión posfija es:", resultado)
+expresion = input("Ingrese la expresión a evaluar: ")
+tipo_notacion = input("Ingrese 'posfija' o 'prefija' para seleccionar la notación: ")
+
+if tipo_notacion == "posfija":
+    resultado = posfijo(expresion)
+    print("El resultado de la expresión posfija es:", resultado)
+elif tipo_notacion == "prefija":
+    resultado = prefijo(expresion)
+    print("El resultado de la expresión prefija es:", resultado)
+else:
+    print("Notación no válida. Por favor, ingrese 'posfija' o 'prefija'.")
