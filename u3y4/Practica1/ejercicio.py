@@ -34,8 +34,8 @@ class Pila:
 pila = Pila(capMaxima=8)
 
 while True:
-    print("Qué quieres hacer? ")
-    opcion = input("Eliminar, agregar o salir?: ")
+    print("Qué quieres hacer?")
+    opcion = input("Eliminar, agregar o salir??: ")
     if opcion == "agregar":
         n = input("Agregar: ")
         pila.poner(n)

@@ -7,4 +7,4 @@ Materia impartida por el ***Ing. Armando López***
 
 
 >Ultimo cambio realizado
->- PRACTICA 1 [Creacións]
+>- PRACTICA 1 [Creada]
