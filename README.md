@@ -7,4 +7,4 @@ Materia impartida por el ***Ing. Armando López***
 
 
 >Ultimo cambio realizado
->- ADA1 U5y6 [Creada]
+>- Practica2 U5y6 [Creada]
