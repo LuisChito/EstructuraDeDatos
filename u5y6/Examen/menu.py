@@ -22,7 +22,11 @@ def ejecutar_opcion(opcion):
     elif opcion == '4':
         print("Intercalando archivos y formando RECITALES...")
         ejercicio4.main()
+        
     elif opcion == '5':
+        print("Ejecutando Opción 5...")
+    
+    elif opcion == '6':
         print("Saliendo del programa...")
         sys.exit()
     else:
