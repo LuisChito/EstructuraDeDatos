@@ -11,23 +11,23 @@ def mostrar_menu():
 
 def ejecutar_opcion(opcion):
     if opcion == '1':
-        print("Ejecutando Opción 1...")
+        print("Hoteles")
         ejercicio1.main()
 
     elif opcion == '2':
-        print("Ejecutando Opción 2...")
+        print("Datos Alumnos")
         ejercicio2.main()
 
     elif opcion == '3':
-        print("Ejecutando Opción 3...")
+        print("Empleados")
         ejercicio3.main()
         
     elif opcion == '4':
-        print("Intercalando archivos y formando RECITALES...")
+        print("Recitales")
         ejercicio4.main()
 
     elif opcion == '5':
-        print("Ejecutando Opción 5...")
+        print("Alumnos Promedios")
         ejercicio5.main()
     
     elif opcion == '6':
