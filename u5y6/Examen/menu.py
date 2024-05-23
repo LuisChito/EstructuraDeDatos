@@ -1,5 +1,5 @@
 import sys
-import ejercicio4   
+import ejercicio1, ejercicio4   
 
 def mostrar_menu():
     print("Menú:")
@@ -12,6 +12,7 @@ def mostrar_menu():
 def ejecutar_opcion(opcion):
     if opcion == '1':
         print("Ejecutando Opción 1...")
+        ejercicio1.main()
 
     elif opcion == '2':
         print("Ejecutando Opción 2...")
@@ -22,7 +23,7 @@ def ejecutar_opcion(opcion):
     elif opcion == '4':
         print("Intercalando archivos y formando RECITALES...")
         ejercicio4.main()
-        
+
     elif opcion == '5':
         print("Ejecutando Opción 5...")
     
