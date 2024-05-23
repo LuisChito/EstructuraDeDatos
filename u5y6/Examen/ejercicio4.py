@@ -70,20 +70,15 @@ def intercalar_archivos(A1, A2, A3):
     return resultado
 
 def main():
-    # Ruta de la carpeta donde están los archivos de texto
     ruta_base = "D:\\Tecnm\\Tercero\\EstructuraDeDatos\\u5y6\\Examen\\archivos"
 
-    # Leer los archivos
     A1 = leer_archivo(os.path.join(ruta_base, 'A1.txt'))
     A2 = leer_archivo(os.path.join(ruta_base, 'A2.txt'))
     A3 = leer_archivo(os.path.join(ruta_base, 'A3.txt'))
 
-    # Intercalar los archivos
     recitales = intercalar_archivos(A1, A2, A3)
 
-    # Verificar que haya recitales para escribir en el archivo
     if recitales:
-        # Escribir el archivo RECITALES.txt
         with open(os.path.join(ruta_base, "RECITALES.txt"), "w") as file:
             for recital in recitales:
                 file.write(f"Nombre: {recital['Nombre']}\n")
