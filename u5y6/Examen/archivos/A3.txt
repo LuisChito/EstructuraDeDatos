@@ -1,0 +1,7 @@
+Nombre: Cantante D
+Número de Presentaciones: 2
+Fechas de las Presentaciones: 2023-03-10, 2023-04-15
+
+Nombre: Orquesta B
+Número de Presentaciones: 3
+Fechas de las Presentaciones: 2023-06-10, 2023-07-15, 2023-08-20

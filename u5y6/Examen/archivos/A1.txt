@@ -1,0 +1,7 @@
+Nombre: Cantante A
+Número de Presentaciones: 3
+Fechas de las Presentaciones: 2021-01-15, 2021-02-20, 2021-03-30
+
+Nombre: Cantante B
+Número de Presentaciones: 2
+Fechas de las Presentaciones: 2021-04-10, 2021-05-15
