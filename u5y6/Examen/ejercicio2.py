@@ -3,7 +3,7 @@ def seleccion_directa_por_nombre(alumnos):
     for i in range(n - 1):
         menor = i
         for j in range(i + 1, n):
-            if alumnos[j]["nombre"] < alumnos[menor]["nombre"]:
+            if alumnos[j]["promedio"] > alumnos[menor]["promedio"]:
                 menor = j
         if menor != i:
             alumnos[i], alumnos[menor] = alumnos[menor], alumnos[i]

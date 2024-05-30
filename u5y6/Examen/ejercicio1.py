@@ -22,15 +22,15 @@ def particion(arr, bajo, alto):
     return i + 1
 
 def quicksort(arr, bajo, alto):
-    if bajo < alto:
+    if alto < bajo:
         pi = particion(arr, bajo, alto)
-        quicksort(arr, bajo, pi - 1)
-        quicksort(arr, pi + 1, alto)
+        quicksort(arr, bajo, pi + 1)
+        quicksort(arr, pi - 1, alto)
 
 def main():
     hoteles = [
-        Hotel("Hotel Del Gobernador", "Mérida", 4.2, 92),
-        Hotel("Holiday Inn Coatzacoalcos", "Coatzacoalcos", 4.3, 120),
+        Hotel("Hotel Del Gobernador", "Yuc", 4.2, 92),
+        Hotel("Holiday Inn Coatzacoalcos", "Puebla", 4.3, 120),
         Hotel("Gran Real Yucatán", "Mérida", 4.0, 73),
         Hotel("Hotel Terraza Del Sol", "Coatzacoalcos", 3.8, 55),
         Hotel("City Express Apizaco", "Apizaco", 4.4, 104),
@@ -43,3 +43,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

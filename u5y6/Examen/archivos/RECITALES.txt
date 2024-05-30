@@ -1,0 +1,16 @@
+Nombre: Cantante A
+Numero de Presentaciones: 3
+Fechas de las Presentaciones: 2021-01-15, 2021-02-20, 2021-03-30
+
+Nombre: Cantante B
+Numero de Presentaciones: 2
+Fechas de las Presentaciones: 2021-04-10, 2021-05-15
+
+Nombre: Cantante C
+Numero de Presentaciones: 4
+Fechas de las Presentaciones: 2022-01-10, 2022-02-20, 2022-03-25, 2022-04-30
+
+Nombre: Orquesta Z
+Numero de Presentaciones: 1
+Fechas de las Presentaciones: 2022-05-15
+

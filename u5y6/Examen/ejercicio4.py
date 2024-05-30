@@ -16,20 +16,17 @@ def leer_archivo(ruta_archivo):
             })
         return registros
 
-def intercalar_archivos(A1, A2, A3):
+def intercalar_archivos(A1, A2):
     i, j, k = 0, 0, 0
     resultado = []
 
-    while i < len(A1) and j < len(A2) and k < len(A3):
-        if A1[i]['Nombre'] <= A2[j]['Nombre'] and A1[i]['Nombre'] <= A3[k]['Nombre']:
+    while i < len(A1) and j < len(A2):
+        if A1[i]['Nombre'] <= A2[j]['Nombre']:
             resultado.append(A1[i])
             i += 1
-        elif A2[j]['Nombre'] <= A1[i]['Nombre'] and A2[j]['Nombre'] <= A3[k]['Nombre']:
+        elif A2[j]['Nombre'] <= A1[i]['Nombre']:
             resultado.append(A2[j])
             j += 1
-        else:
-            resultado.append(A3[k])
-            k += 1
 
     while i < len(A1) and j < len(A2):
         if A1[i]['Nombre'] <= A2[j]['Nombre']:
@@ -39,21 +36,6 @@ def intercalar_archivos(A1, A2, A3):
             resultado.append(A2[j])
             j += 1
 
-    while j < len(A2) and k < len(A3):
-        if A2[j]['Nombre'] <= A3[k]['Nombre']:
-            resultado.append(A2[j])
-            j += 1
-        else:
-            resultado.append(A3[k])
-            k += 1
-
-    while i < len(A1) and k < len(A3):
-        if A1[i]['Nombre'] <= A3[k]['Nombre']:
-            resultado.append(A1[i])
-            i += 1
-        else:
-            resultado.append(A3[k])
-            k += 1
 
     while i < len(A1):
         resultado.append(A1[i])
@@ -62,11 +44,6 @@ def intercalar_archivos(A1, A2, A3):
     while j < len(A2):
         resultado.append(A2[j])
         j += 1
-
-    while k < len(A3):
-        resultado.append(A3[k])
-        k += 1
-
     return resultado
 
 def main():
@@ -74,9 +51,8 @@ def main():
 
     A1 = leer_archivo(os.path.join(ruta_base, 'A1.txt'))
     A2 = leer_archivo(os.path.join(ruta_base, 'A2.txt'))
-    A3 = leer_archivo(os.path.join(ruta_base, 'A3.txt'))
 
-    recitales = intercalar_archivos(A1, A2, A3)
+    recitales = intercalar_archivos(A1, A2)
 
     if recitales:
         with open(os.path.join(ruta_base, "RECITALES.txt"), "w") as file:
